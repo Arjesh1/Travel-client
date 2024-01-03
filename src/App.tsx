@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import './App.css';
 import { FaPaperPlane } from "react-icons/fa6";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const MainWrapper = styled.div`
   color: #BF4F74;
@@ -9,16 +11,27 @@ const MainWrapper = styled.div`
   padding: 0.25em 1em;
   border: 2px solid #BF4F74;
   border-radius: 3px;
+  display: flex;
+  justify-content: center;
 `;
 
 function App() {
+
+  const notify = () => toast("Welcome to TravelVerse");
+
   return (
+    <>
     <MainWrapper>
-      <p className="text-3xl font-bold underline ">
+      <p className="text-3xl font-bold underline">
       Welcome to TravelVerse
-      <FaPaperPlane />
     </p>
+    <FaPaperPlane className="text-3xl" />
     </MainWrapper>
+    <div className='flex justify-center'>
+      <button onClick={notify} className='bg-red-800 px-5 py-3 text-white font-bold'>Let's Travel</button>
+    </div>
+    <ToastContainer />
+    </>
   );
 }
 
