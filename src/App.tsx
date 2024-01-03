@@ -1,12 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <p>Welcome to travel website
-      </p>
+      <p className="text-3xl font-bold underline ">
+      Welcome to TravelVerse
+    </p>
     </div>
   );
 }
