@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import './App.css';
+import { FaPaperPlane } from "react-icons/fa6";
 
 const MainWrapper = styled.div`
   color: #BF4F74;
@@ -15,6 +16,7 @@ function App() {
     <MainWrapper>
       <p className="text-3xl font-bold underline ">
       Welcome to TravelVerse
+      <FaPaperPlane />
     </p>
     </MainWrapper>
   );
