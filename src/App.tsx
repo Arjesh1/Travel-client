@@ -31,7 +31,7 @@ function App() {
     <FaPaperPlane className="text-3xl" />
     </MainWrapper>
     <div className='flex justify-center gap-10'>
-      <button onClick={notify} className='bg-red-800 px-5 py-3 text-white font-bold'>Let's Travel</button>
+      <button onClick={notify} className='bg-red-800 px-5 py-3 text-white font-bold'>Let's Header branch</button>
       <button onClick={sweetAlert} className='bg-yellow-800 px-5 py-3 text-white font-bold'>Book Now</button>
     </div>
     <ToastContainer />
