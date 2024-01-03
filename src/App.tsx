@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import './App.css';
 import { FaPaperPlane } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
+import swal from 'sweetalert';
 
 const MainWrapper = styled.div`
   color: #BF4F74;
@@ -19,6 +20,8 @@ function App() {
 
   const notify = () => toast("Welcome to TravelVerse");
 
+  const sweetAlert = () => swal("Good job!", "Your tour has been booked!", "success");
+
   return (
     <>
     <MainWrapper>
@@ -27,8 +30,9 @@ function App() {
     </p>
     <FaPaperPlane className="text-3xl" />
     </MainWrapper>
-    <div className='flex justify-center'>
+    <div className='flex justify-center gap-10'>
       <button onClick={notify} className='bg-red-800 px-5 py-3 text-white font-bold'>Let's Travel</button>
+      <button onClick={sweetAlert} className='bg-yellow-800 px-5 py-3 text-white font-bold'>Book Now</button>
     </div>
     <ToastContainer />
     </>
